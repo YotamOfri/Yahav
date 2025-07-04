@@ -13,11 +13,9 @@ import sys
 # Setup console output
 sys.stdout.reconfigure(encoding="utf-8")
 # === Setup Selenium ===
-chrome_profile = r"C:\Users\yotam\OneDrive\Documents\AI\Selenium\profile\flaticon"
 chromedriver_path = "chromedriver.exe"
 
 chrome_options = Options()
-chrome_options.add_argument(f"user-data-dir={chrome_profile}")
 service = Service(executable_path=chromedriver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
